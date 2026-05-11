@@ -1,20 +1,2 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+Westworld is a browser-based 2D top-down action and survival game developed as a Computer Graphics Final Project for Spring 2026.The game is built with HTML5 Canvas, React, TypeScript, and Tailwind CSS. It includes real-time animation, mouse interaction, collision detection, an upgrade system, combo mechanics, wave progression, and visual effects.Live Demohttps://huseyinfidan.github.io/westworld (Update this link once you publish the game)Repositoryhttps://github.com/huseyinfidan/westworldProject OverviewWestworld is a fully playable arcade-style survival game where the player defends a frontier town against endless waves of bandits. The player controls a crosshair to aim, shoots enemies, throws dynamite, utilizes explosive barrels, and collects gold to buy upgrades from the store to survive as long as possible.The game includes:Start screenActive gameplayGame over screenShop and Upgrade systemScoring and Gold systemCombo systemWave progressionIncreasing difficultyMultiple enemy typesVisual effectsEnemy TypesTargetEffectNormal BanditApproaches the player at standard speed and health.Fast BanditMoves much faster and is harder to hit, but has lower health.Tough BanditMoves slowly but has three times the health of a normal bandit.Shooter BanditStops at a certain distance and shoots projectiles directly at the player.BossSpawns every 5 waves. Features a massive size and very high health.Explosive Barrel(Environment Object) Explodes when shot, dealing massive area-of-effect damage to nearby enemies.Game RulesKilling enemies in quick succession increases the Combo multiplier, yielding more gold. The combo lasts for 2 seconds; if no enemy is killed in this time, the combo resets.The "General Store" screen appears after each wave is completed.Players can spend collected gold to upgrade Fire Rate, Damage, Max Health, or purchase a Shotgun.Players can right-click to throw a limited amount of dynamite for massive explosions.Enemy spawn rate, movement speed, and overall difficulty increase in later waves.The game ends when the player's health drops to zero (Host Terminated).ControlsControlActionMouse MoveAimLeft Mouse ClickShootRight Mouse ClickThrow DynamiteSpaceActivate/Deactivate Deadeye (Slow-motion) modeComputer Graphics ConceptsThis project demonstrates several computer graphics concepts:Procedural 2D drawing with HTML5 Canvas renderingReal-time animation loop using requestAnimationFrame()2D transformations such as translate(), rotate(), and scale() (e.g., rotating the character's arm towards the mouse, camera shake effects)Trigonometry-based (Math.atan2) Mouse-based interactionEuclidean distance-based Collision detectionCustom engine for blood and explosion Particle effectsAtmospheric backgrounds, damage flashes, and shadows using Gradients, shadows, and glow effectsHigh-performance Game state management using React's useRef hook
 
-# Run and deploy your AI Studio app
-
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/f8fa01bf-4a8f-4a69-b014-09ec0f375d8c
-
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`

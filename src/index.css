@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=JetBrains+Mono:wght@400;700&family=Rye&family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --font-western: "Rye", system-ui;
+  --font-clean: "Outfit", sans-serif;
+  
+  --color-dust-50: #fafaf9;
+  --color-dust-100: #f5f5f4;
+  --color-dust-200: #e7e5e4;
+  --color-dust-300: #d6d3d1;
+  --color-dust-400: #a8a29e;
+  --color-dust-500: #78716c;
+  --color-dust-600: #57534e;
+  --color-dust-700: #44403c;
+  --color-dust-800: #292524;
+  --color-dust-900: #1c1917;
+  --color-dust-950: #0c0a09;
+  
+  --color-wood-raw: #7c4a32;
+  --color-wood-dark: #4d2d1d;
+  --color-sheriff: #facc15;
+}
+
+@layer base {
+  html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    @apply bg-dust-950 text-dust-100 overflow-hidden select-none font-clean;
+  }
+}
+
+.western-border {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(0,0,0,0.8), inset 0 0 1px rgba(255,255,255,0.2);
+}
+
+.paper-texture {
+  background-color: rgba(12, 10, 9, 0.95);
+  backdrop-filter: blur(10px);
+  color: #f5f5f4;
+}
+
+/* Westworld minimalist "Host creation" circle */
+.delos-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.delos-circle::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  border-radius: 50%;
+}
+

@@ -5,10 +5,10 @@
 The game is built with **HTML5 Canvas**, **React**, **TypeScript**, and **Tailwind CSS**. It includes real-time animation, mouse interaction, collision detection, an upgrade system, combo mechanics, wave progression, and visual effects.
 
 ### Live Demo
-[https://huseyinfidan.github.io/westworld](https://huseyinfidan.github.io/westworld)
+[https://huseyinfidan.github.io/Westworld](https://huseyinfidan.github.io/Westworld)
 
 ### Repository
-[https://github.com/huseyinfidan/westworld](https://github.com/huseyinfidan/westworld)
+[https://github.com/huseyinfidan/Westworld](https://github.com/huseyinfidan/Westworld)
 
 ---
 
